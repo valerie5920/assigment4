@@ -1,4 +1,5 @@
-package test;
+package plswork;
+import java.io.*;
 
 public class Employee {
 
@@ -6,7 +7,7 @@ public class Employee {
 		private int idNumber; //ID number 
 		private String department; //department 
 		private String position; //position
-		
+			
 		public Employee ()
 		{
 		name = " ";
@@ -16,36 +17,37 @@ public class Employee {
 		
 		
 		}//end employee
-		public Employee(String n, int id, String dept, String pos) {
+		public Employee(String n, int id, String dept, String pos) throws IOException {
 		name = n; 
 		idNumber = id;
 		department = dept;
 		position = pos;
 		} //ending assigning stuff
-		public void setname(String newname) {
+		
+		public void setName(String newname) {
 			name= newname;
 		}//end setname
-		public void setidNumber(int newidNumber) {
+		public void setIdNumber(int newidNumber) {
 			idNumber = newidNumber;
 		}//end setidNumber
-		public void setdepartment(String newdepartment) {
+		public void setDepartment(String newdepartment) {
 			department = newdepartment;
 			
 		}//end setdepartment
-		public void  setposition(String newposition){
+		public void  setPosition(String newposition){
 			position = newposition;
 		}
 		public String getName()
 		{ 	return name;
 		
 		}//end return 
-		public int getnewidNumber() { 
+		public int getnewIdNumber() { 
 			return idNumber;
 		}//return id
-		public String getnewdepartment()  {
+		public String getnewDepartment()  {
 			return department;
 		}
-		public String getnewposition(){
+		public String getnewPosition(){
 			return position; 
 		}
 		
@@ -53,8 +55,4 @@ public class Employee {
 			//end setposition
 			
 	}//end class
-
-
-
-
 
